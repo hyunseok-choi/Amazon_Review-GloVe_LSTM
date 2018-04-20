@@ -51,7 +51,7 @@ Dictionary Size | Naive Bayes | LightGBM
 *LightGBM wasn't fully tuned, so the performance is assumed to be improved.*
 
 ## Conclusions and Limitations
-In conclusion, manual feature extraction in bag-of-words model works quite better than I expected. However, the approach has limitations in that you always need to set a right size of dictionary based on the size of your dataset and your trained dictionary would be less effective for other dataset. It took too long (approximately 24 hours) just to run the Glove + LSTM model, but it performed better with simple implementation.
+In conclusion, manual feature extraction in bag-of-words model works quite better than I expected. It is assumed becuase of plenty of data I used. So, data is king! However, the approach has limitations in that you always need to set a right size of dictionary based on the size of your dataset and your trained dictionary would be less effective for other dataset. It took too long (approximately 24 hours) just to run the Glove + LSTM model, but it performed better with simple implementation.
 
 In the GloVe + LSTM model, its tokenization was done before train/test dataset split. Its data is large enough so it wouldn't compromise to the performance of the model I believe. However, theoretically it should be done after test/train split. It also seems to suffer from overfitting a bit considering its evaluation losses and accuracies, so the capacity of the model needs to be adjusted. I ran the code on a supercomputing cluster with GPU at the University of Pittsburgh, the running time could be shorter with multi GPU use. In addition, the performance could be better with larger pretrained models (i.e. larger dimension and token size).
 
