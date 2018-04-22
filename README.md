@@ -1,7 +1,7 @@
 # Classifying Amazon reviews with word embedding technique(Glove)+LSTM and with Bag-of-words and lemmatization.
 
 ## Dataset and objective
-The dataset I used is available at http://jmcauley.ucsd.edu/data/amzon/. I used review data for the electronics category. The ratings range from 1 to 5 integers, so I changed the ratings of 1, 2, and 3 into 0(LOW) and the rest into 1(HIGH). Now the task is a binary classification problem.
+The dataset I used is available at http://jmcauley.ucsd.edu/data/amazon/. I used review data for the electronics category. The ratings range from 1 to 5 integers, so I changed the ratings of 1, 2, and 3 into 0(LOW) and the rest into 1(HIGH). Now the task is a binary classification problem.
 
 The objective is to claffisify each review's rating by its review text.
 
